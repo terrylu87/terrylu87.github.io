@@ -1,0 +1,209 @@
+---
+excerpt: Describe the principles in detail. And how to blog with emacs jekyll and github page.
+layout: post
+category : howto
+tags : [jekyll, tutorial, github]
+---
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">About This Article</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">The Basic Principles</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1">What is Jekyll and static site</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>Static Site, as it's name, is delivered to the user exactly as stored. The dynamic part of the page, like comment, must be add as plugins. The advantage is that it's cheap and fast to develop, and easy to host. With generators like Jekyll, you can build a site in seconds.
+</p></div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2">What is github pages</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p>GitHub Pages are public webpages freely hosted and easily published through github. There are two ways to set up a github page.
+First, You can create a  repository called "username.github.io", where username is your username for github. Then this repository is your default git page repo. Push your site to master branch of this repo. You will see the site at <a href="https://username.github.io/">https://username.github.io/</a> . 
+Second, actually, every repository can be a git hub page by creating a branch called gh-pages. All the content on this branch, can be visit via <a href="https://username.github.io/project">https://username.github.io/project</a>. For example, my blog repository <a href="https://github.com/terrylu87/blog">https://github.com/terrylu87/blog</a> . I create gh-pages branch on it. So that you can visit my site by  <a href="https://terrylu87.github.io/blog">https://terrylu87.github.io/blog</a>.
+</p></div>
+
+</div>
+
+<div id="outline-container-2-3" class="outline-3">
+<h3 id="sec-2-3">The Emacs and org-mode</h3>
+<div class="outline-text-3" id="text-2-3">
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Why Emacs-Jekyll-GithubPages</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>I use Emacs org-mode to write the blog. The org-mode provide a perfect way to compose logical orient articales.
+</p></div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">How to set up the blog</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1">Set up your github pages</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<p>This whouldn't be a problem if you understand the basic principle describe in previous section. For me, I prefer the gh-pages branch.
+</p>
+
+
+<pre class="src src-bash">git clone https://username.github.io/project.git blog
+cd blog
+git checkout -b gh-pages
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2">Generate the static site</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<p>There are many tutorials online about how to generate a static blog. The document on the Jekyll official website is good. But if you want a customized theme, or support the archive and tags and other feature. You need a better starting point. I use Jekyll Bootstrap : <a href="http://jekyllbootstrap.com/">http://jekyllbootstrap.com/</a>. The Jekyll Bootstrap support theme, which can eassily be installed and changed.
+</p>
+
+
+<pre class="src src-bash">git clone https://github.com/plusjade/jekyll-bootstrap.git jb
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3">Test your site.</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<p>Install ruby and javascript enviroment
+</p>
+
+
+<pre class="src src-bash">sudo apt-get install nodejs ruby-dev
+</pre>
+
+<p>
+Install Jekyll
+</p>
+
+
+<pre class="src src-bash">sudo gem install jekyll
+</pre>
+
+<p>
+Test the site
+</p>
+
+
+<pre class="src src-bash">cd blog
+jekyll serve
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3">
+<h3 id="sec-4-4">Push your site to github</h3>
+<div class="outline-text-3" id="text-4-4">
+
+
+
+
+<pre class="src src-bash">cd blog/
+cp -rf jb/* .
+git commit
+git push origin gh-pages
+</pre>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5">Other interesting stuff</h2>
+<div class="outline-text-2" id="text-5">
+
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1">Comments</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<p>I use disqus for comment. Regisrate an accont at disqus official site. They will provide some tutorials. But since our jekyll bootstrap had disqus integration. We just need change the _config.yml file under jekyll root dir.
+</p>
+
+
+<pre class="src src-css"><span style="color: #66D9EF;">comments</span> :
+    <span style="color: #66D9EF;">provider</span> : disqus
+    <span style="color: #66D9EF;">disqus</span> :
+      short_name : your_short_name
+</pre>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2">Theme and decoration</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<p>You can find a theme at <a href="http://themes.jekyllbootstrap.com/">http://themes.jekyllbootstrap.com/</a>
+</p>
+
+
+<pre class="src src-bash">cd blog/
+rake theme:install git=<span style="color: #E6DB74;">"https://github.com/jekyllbootstrap/theme-the-program.git"</span>
+rake theme:install name=<span style="color: #E6DB74;">"THEME-NAME"</span>
+</pre>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6">Todo</h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3">
+<h3 id="sec-6-1">add search function</h3>
+<div class="outline-text-3" id="text-6-1">
+
+</div>
+</div>
+</div>
