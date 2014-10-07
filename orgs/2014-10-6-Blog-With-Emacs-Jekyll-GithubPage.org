@@ -1,42 +1,43 @@
 #+STARTUP: showall indent
 #+STARTUP: hidestars
-#+BEGIN_HTML
+#+OPTIONS: toc:nil
+#+begin_html
 ---
-excerpt: Describe the principles in detail. And how to blog with emacs jekyll and github page.
+excerpt: describe the principles in detail. and how to blog with emacs jekyll and github page.
 layout: post
 category : howto
 tags : [jekyll, tutorial, github]
 ---
-#+END_HTML
+#+end_html
 
-* About This Article
+* about this article
 
-* The Basic Principles
-** What is Jekyll and static site
-Static Site, as it's name, is delivered to the user exactly as stored. The dynamic part of the page, like comment, must be add as plugins. The advantage is that it's cheap and fast to develop, and easy to host. With generators like Jekyll, you can build a site in seconds.
-** What is github pages
-GitHub Pages are public webpages freely hosted and easily published through github. There are two ways to set up a github page.
-First, You can create a  repository called "username.github.io", where username is your username for github. Then this repository is your default git page repo. Push your site to master branch of this repo. You will see the site at https://username.github.io/ . 
-Second, actually, every repository can be a git hub page by creating a branch called gh-pages. All the content on this branch, can be visit via https://username.github.io/project. For example, my blog repository https://github.com/terrylu87/blog . I create gh-pages branch on it. So that you can visit my site by  https://terrylu87.github.io/blog.
-** The Emacs and org-mode
+* the basic principles
+** what is jekyll and static site
+static site, as it's name, is delivered to the user exactly as stored. the dynamic part of the page, like comment, must be add as plugins. the advantage is that it's cheap and fast to develop, and easy to host. with generators like jekyll, you can build a site in seconds.
+** what is github pages
+github pages are public webpages freely hosted and easily published through github. there are two ways to set up a github page.
+first, you can create a  repository called "username.github.io", where username is your username for github. then this repository is your default git page repo. push your site to master branch of this repo. you will see the site at https://username.github.io/ . 
+second, actually, every repository can be a git hub page by creating a branch called gh-pages. all the content on this branch, can be visit via https://username.github.io/project. for example, my blog repository https://github.com/terrylu87/blog . i create gh-pages branch on it. so that you can visit my site by  https://terrylu87.github.io/blog.
+** the emacs and org-mode
 
-* Why Emacs-Jekyll-GithubPages
-I use Emacs org-mode to write the blog. The org-mode provide a perfect way to compose logical orient articales.
-* How to set up the blog
-** Set up your github pages
-This whouldn't be a problem if you understand the basic principle describe in previous section. For me, I prefer the gh-pages branch.
-#+BEGIN_SRC bash
+* why emacs-jekyll-githubpages
+i use emacs org-mode to write the blog. the org-mode provide a perfect way to compose logical orient articales.
+* how to set up the blog
+** set up your github pages
+this whouldn't be a problem if you understand the basic principle describe in previous section. for me, i prefer the gh-pages branch.
+#+begin_src bash
 git clone https://username.github.io/project.git blog
 cd blog
 git checkout -b gh-pages
-#+END_SRC
-** Generate the static site
-There are many tutorials online about how to generate a static blog. The document on the Jekyll official website is good. But if you want a customized theme, or support the archive and tags and other feature. You need a better starting point. I use Jekyll Bootstrap : http://jekyllbootstrap.com/. The Jekyll Bootstrap support theme, which can eassily be installed and changed.
-#+BEGIN_SRC bash
+#+end_src
+** generate the static site
+there are many tutorials online about how to generate a static blog. the document on the jekyll official website is good. but if you want a customized theme, or support the archive and tags and other feature. you need a better starting point. i use jekyll bootstrap : http://jekyllbootstrap.com/. the jekyll bootstrap support theme, which can eassily be installed and changed.
+#+begin_src bash
 git clone https://github.com/plusjade/jekyll-bootstrap.git jb
-#+END_SRC
-** Test your site.
-Install ruby and javascript enviroment
+#+end_src
+** test your site.
+install ruby and javascript enviroment
 #+BEGIN_SRC bash
 sudo apt-get install nodejs ruby-dev
 #+END_SRC
