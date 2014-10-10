@@ -10,33 +10,33 @@ tags : [jekyll, tutorial, github]
 ---
 #+end_html
 
-* about this article
+* About this article
 
-* the basic principles
-** what is jekyll and static site
-static site, as it's name, is delivered to the user exactly as stored. the dynamic part of the page, like comment, must be add as plugins. the advantage is that it's cheap and fast to develop, and easy to host. with generators like jekyll, you can build a site in seconds.
-** what is github pages
-github pages are public webpages freely hosted and easily published through github. there are two ways to set up a github page.
-first, you can create a  repository called "username.github.io", where username is your username for github. then this repository is your default git page repo. push your site to master branch of this repo. you will see the site at https://username.github.io/ . 
-second, actually, every repository can be a git hub page by creating a branch called gh-pages. all the content on this branch, can be visit via https://username.github.io/project. for example, my blog repository https://github.com/terrylu87/blog . i create gh-pages branch on it. so that you can visit my site by  https://terrylu87.github.io/blog.
-** the emacs and org-mode
+* The basic principles
+** What is jekyll and static site
+Static site, as it's name, is delivered to the user exactly as stored. The dynamic part of the page, like comment, must be add as plugins. The advantage is that it's cheap and fast to develop, and easy to host. With generators like jekyll, you can build a site in seconds.
+** What is github pages
+Github pages are public webpages freely hosted and easily published through github. There are two ways to set up a github page.
+First, you can create a  repository called "username.github.io", where username is your username for github. Then this repository is your default git page repo. Push your site to master branch of this repo. You will see the site at https://username.github.io/ . 
+Second, actually, every repository can be a git hub page by creating a branch called gh-pages. All the content on this branch, can be visit via https://username.github.io/project. For example, my blog repository https://github.com/terrylu87/blog . I create gh-pages branch on it. So that you can visit my site by  https://terrylu87.github.io/blog.
+** The emacs and org-mode
 
-* why emacs-jekyll-githubpages
-i use emacs org-mode to write the blog. the org-mode provide a perfect way to compose logical orient articales.
-* how to set up the blog
-** set up your github pages
-this whouldn't be a problem if you understand the basic principle describe in previous section. for me, i prefer the gh-pages branch.
+* Why emacs-jekyll-githubpages
+I use emacs org-mode to write the blog. the org-mode provide a perfect way to compose logical oriented articles.
+* How to set up the blog
+** Set up your github pages
+This whouldn't be a problem if you understand the basic principle describe in previous section. For me, I prefer the gh-pages branch.
 #+begin_src bash
 git clone https://username.github.io/project.git blog
 cd blog
 git checkout -b gh-pages
 #+end_src
-** generate the static site
-there are many tutorials online about how to generate a static blog. the document on the jekyll official website is good. but if you want a customized theme, or support the archive and tags and other feature. you need a better starting point. i use jekyll bootstrap : http://jekyllbootstrap.com/. the jekyll bootstrap support theme, which can eassily be installed and changed.
+** Generate the static site
+There are many tutorials online about how to generate a static blog. The document on the jekyll official website is good. But if you want a customized theme, or support the archive and tags and other feature. You need a better starting point. I use jekyll bootstrap : http://jekyllbootstrap.com/. The jekyll bootstrap support theme, which can eassily be installed and changed.
 #+begin_src bash
 git clone https://github.com/plusjade/jekyll-bootstrap.git jb
 #+end_src
-** test your site.
+** Test your site.
 install ruby and javascript enviroment
 #+BEGIN_SRC bash
 sudo apt-get install nodejs ruby-dev
@@ -74,4 +74,4 @@ rake theme:install git="https://github.com/jekyllbootstrap/theme-the-program.git
 rake theme:install name="THEME-NAME"
 #+END_SRC
 * Todo
-** add search function
+** Add search function
