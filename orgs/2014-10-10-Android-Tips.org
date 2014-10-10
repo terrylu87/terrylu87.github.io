@@ -1,0 +1,18 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+OPTIONS: toc:nil
+#+BEGIN_HTML
+---
+excerpt: some interesting tips for android (keep updating)
+layout: post
+category : android
+tags : [android, tips, screenrecord]
+---
+#+END_HTML
+
+* Screen Record
+  As a big fan of clash of clans, I want to share some videos of clan battle. When finding the solution under both ios and android. It appears that android has a much easier way with just one command in adb shell.
+  #+BEGIN_SRC bash
+adb shell screenrecord /sdcard/filename.mp4
+  #+END_SRC
+  When you're done, hit CTRL-C to stop recording. The video will be right there.
