@@ -6,7 +6,7 @@
 excerpt: some interesting tips for android (keep updating)
 layout: post
 category : android
-tags : [android, tips, screenrecord]
+tags : [android, tips, screen-record]
 ---
 #+END_HTML
 

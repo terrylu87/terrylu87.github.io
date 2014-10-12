@@ -10,9 +10,9 @@ tags : [personal]
 ---
 #+END_HTML
 * Who am I ?
-Hello Hakers.
-I'm Terry Lu from Shanghai China. Now I'm mainly focus on algorithm learning, along with embedded linux software development. I love travel and photography.
+Hello Hackers.
+I'm Terry Lu from Shanghai China. Now I'm mainly focus on algorithm learning, along with embedded Linux software development. I love travel and photography.
 * About this blog.
 This is a blog for recording some technical tips and interesting stuffs I found in daily work.
-I used to have a private wiki set up on my workstation. But those kind of things seems to be out of date after I meet static site generator like jekyll and nikola. They works perfectly with the github pages.
+I used to have a private wiki set up on my workstation. But those kind of things seems to be out of date after I meet static site generator like Jekyll and Nicola. They works perfectly with the github pages.
 Feel free to contact me by email.

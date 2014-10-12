@@ -12,7 +12,7 @@ tags : [jquery, cdn]
  * Problem
  I found the ajax.googleapis.com and fonts.googleapis.com are blocked by GFW in china. The pages containing those resources fail to be loaded here.
  * Solution
- I changed it to a chinese local miror server provided by 360. I replace all the googleapis with useso.
+ I changed it to a Chinese local mirror server provided by 360. I replace all the googleapis with useso.
  #+BEGIN_SRC bash
   ajax.googleapis.com   > ajax.useso.com
   fonts.googleapis.com  > fonts.useso.com
