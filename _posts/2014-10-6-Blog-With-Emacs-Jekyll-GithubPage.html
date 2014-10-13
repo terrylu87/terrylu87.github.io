@@ -26,7 +26,8 @@ Static site, as it's name, is delivered to the user exactly as stored. The dynam
 <p>
 Github pages are public web pages freely hosted and easily published through github. There are two ways to set up a github page.
 First, you can create a  repository called "username.github.io", where username is your username for github. Then this repository is your default git page repo. Push your site to master branch of this repo. You will see the site at <a href="https://username.github.io/">https://username.github.io/</a> . 
-Second, actually, every repository can be a git hub page by creating a branch called gh-pages. All the content on this branch, can be visit via <a href="https://username.github.io/project">https://username.github.io/project</a>. For example, my blog repository <a href="https://github.com/terrylu87/blog">https://github.com/terrylu87/blog</a> . I create gh-pages branch on it. So that you can visit my site by  <a href="https://terrylu87.github.io/blog">https://terrylu87.github.io/blog</a>.
+Second, actually, every repository can be a git hub page by creating a branch called gh-pages. All the content on this branch, can be visit via <a href="https://username.github.io/project">https://username.github.io/project</a>.
+For example, my blog repository <a href="https://github.com/terrylu87/terrylu87.github.io.git">https://github.com/terrylu87/terrylu87.github.io.git</a> . So that you can visit my site by  <a href="https://terrylu87.github.io">https://terrylu87.github.io</a>.
 </p>
 </div>
 </div>
@@ -50,13 +51,11 @@ I use emacs org-mode to write the blog. the org-mode provide a perfect way to co
 <h3 id="sec-4-1"><span class="section-number-3">4.1</span> Set up your github pages</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
-This wouldn't be a problem if you understand the basic principle describe in previous section. For me, I prefer the gh-pages branch.
+This wouldn't be a problem if you understand the basic principle describe in previous section. For me, I use the defautl username.github.io repository.
 </p>
 <div class="org-src-container">
 
-<pre class="src src-bash">git clone https://username.github.io/project.git blog
-cd blog
-git checkout -b gh-pages
+<pre class="src src-bash">git clone https://username.github.io/terrylu87.github.io.git blog
 </pre>
 </div>
 </div>
@@ -112,7 +111,7 @@ jekyll serve
 <pre class="src src-bash">cd blog/
 cp -rf jb/* .
 git commit
-git push origin gh-pages
+git push origin master
 </pre>
 </div>
 </div>
