@@ -1,0 +1,63 @@
+Browse through our member-created tutorials (takes you to the old topcoder site).
+Author	Title
+* TODO 1 lbackstrom	The Importance of Algorithms
+* TODO 2 antimatter	How To Dissect a TopCoder Problem Statement
+* TODO 3 Dumitru	How to Find a Solution
+* TODO 4 leadhyena_inran	Planning an Approach to a TopCoder Problem:
+* DONE 5 dimkadimon	Mathematics for TopCoders
+  CLOSED: [2014-10-15 Wed 16:55]
+  - State "DONE"       from "TODO"       [2014-10-15 Wed 16:55]
+* TODO 6 lbackstrom	Geometry Concepts:
+* TODO  - Section 1: Basic Concepts
+* TODO  - Section 2: Line Intersection and its Applications
+* TODO  - Section 3: Using Geometry in TopCoder Problems
+* TODO 7 gladius	Introduction to Graphs and Their Data Structures:
+* TODO  - Section 1: Recognizing and Representing a Graph
+* TODO  - Section 2: Searching a Graph
+* TODO  - Section 3: Finding the Best Path through a Graph
+* TODO 8 supernova	Greedy is Good
+* DONE 9 Dumitru	Dynamic Programming: From novice to advanced
+  CLOSED: [2014-10-15 Wed 16:54]
+  - State "DONE"       from "TODO"       [2014-10-15 Wed 16:54]
+* TODO 10 misof	Computational Complexity
+* TODO  - Section 1
+* TODO  - Section 2
+* TODO 11 Dan[Popovici] & mariusmuja	Using Regular Expressions
+* TODO 12 supernova	Understanding Probabilities
+* TODO 13 timmac	Data Structures
+* TODO 14 cucu	New Features of Java 1.5
+* TODO 15 timmac	Sorting
+* TODO 16 _efer_	Maximum Flow
+* TODO  - Section 1
+* TODO  - Section 2
+* TODO 17 misof	Representation of Integers and Reals
+* TODO  - Section 1
+* TODO  - Section 2
+* TODO 18 lovro	Binary Search
+* TODO 19 bmerry	A bit of fun: fun with bits
+* TODO 20 danielp	Range Minimum Query and Lowest Common Ancestor
+* TODO 21 DmitryKorolev	Power up C++ with the Standard Template Library: Part I
+* TODO 22 DmitryKorolev	Power up C++ with the Standard Template Library: Part II: Advanced Uses
+* TODO 23 medv	Prime Numbers, Factorization and Euler Function
+* TODO 24 jmzero	An Introduction to Recursion, Part 1
+* TODO 25 jmzero	An Introduction to Recursion, Part 2
+* TODO 26 cpphamza	An Introduction to Binary Search and Red-Black Trees
+* TODO 27 bmerry	Line Sweep Algorithms
+* TODO 28 Zealint	Minimum Cost Flow 
+* TODO  - Part 1 - Key Concepts
+* TODO  - Part 2 - Algorithms
+* TODO  - Part 3 - Applications
+* TODO 29 rasto6sk	Algorithm Games
+* TODO 30 boba5551	Binary Indexed Trees
+* TODO 31 TheLlama	Introduction to String Searching Algorithms
+* TODO 32 Zealint	Maximum Flow: Augmenting Path Algorithms Comparison
+* TODO 33 x-ray	Basics of combinatorics
+* TODO 34 NilayVaish	A New Approach to the Maximum Flow Problem
+* TODO 35 vlad_D	Disjoint-set Data Structures
+* TODO 36 luison9999	Using Tries
+* TODO 37 dcp	An Introduction to Multidimensional Databases
+* TODO 38 zmij	The Best Questions for Would-be C++ Programmers 
+* TODO  - Part 1
+* TODO  - Part 2
+* TODO 39 innocentboy	Primality Testing : Non-deterministic Algorithms
+* TODO 40 x-ray	Assignment Problem and Hungarian Algorithm
