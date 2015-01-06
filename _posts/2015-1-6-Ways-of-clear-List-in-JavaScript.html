@@ -1,0 +1,74 @@
+---
+excerpt: 
+layout: post
+category : HTML5
+tags : [javascript]
+---
+
+<p>
+Ways to clear an existing array A. (From Stack Overflow)
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Method 1</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+(this was my original answer to the question)
+</p>
+<div class="org-src-container">
+
+<pre class="src src-javascript">A = [];
+</pre>
+</div>
+<p>
+This code will set the variable A to a new empty array. This is perfect if you don't have references to the original array A anywhere else because this actually creates a brand new (empty) array. You should be careful with this method because if you have referenced this array from another variable or property, the original array will remain unchanged. Only use this if you only reference the array by its original variable A.
+</p>
+
+<p>
+This is also the fastest solution.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Method 2 (as suggested by Matthew Crumley)</h2>
+<div class="outline-text-2" id="text-2">
+<div class="org-src-container">
+
+<pre class="src src-javascript">A.length = 0
+</pre>
+</div>
+<p>
+This will clear the existing array by setting its length to 0. Some have argued that this may not work in all implementations of Javascript but it turns out that this is not the case. It also works when using "strict mode" in Ecmascript 5 because the length property of an array is a read/write property.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Method 3 (as suggested by Anthony)</h2>
+<div class="outline-text-2" id="text-3">
+<div class="org-src-container">
+
+<pre class="src src-javascript">A.splice(0,A.length)
+</pre>
+</div>
+<p>
+Using .splice() will work perfectly, but it's not very efficient because the .splice() function will return an array with all the removed items, so it will actually return a copy of the original array.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Method 4 (as suggested by tanguy<sub>k</sub>)</h2>
+<div class="outline-text-2" id="text-4">
+<div class="org-src-container">
+
+<pre class="src src-javascript"><span style="color: #66D9EF;">while</span>(A.length &gt; 0) {
+    A.pop();
+}
+</pre>
+</div>
+<p>
+This solution is not very succinct but it is by far the fastest solution (apart from setting the array to a new array). If you care about performance, consider using this method to clear an array. Benchmarks show that this is at least 10 times faster than setting the length to 0 or using splice().</p>
+</div>
+</div>
