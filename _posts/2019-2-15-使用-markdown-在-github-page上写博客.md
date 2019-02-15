@@ -6,7 +6,7 @@ tags: [jekyll, blog, chinese, multilingual, font, github-page]
 lang: zh
 ---
 
-原文地址：https://terrylu87.github.io/blog/2019/02/15/使用-markdown-在-github-page上写博客 <br>
+[原文地址](https://terrylu87.github.io/blog/2019/02/15/使用-markdown-在-github-page上写博客) <br>
 转载请注明出处
 ## 1 使用Markdown+jekyll在github page上写博客
 
